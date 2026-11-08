@@ -157,7 +157,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".badge {\n    display: flex;\n    gap: 1rem;\n}",
+                    "data": ".badge {\n    display: flex;\n    justify-content: start;\n    align-items: center;\n    gap: 0rem;\n}",
                     "styleUrl": "./badge.css"
                 }
             ],
@@ -620,7 +620,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": ".icon {\n    width: 100%;\n}\n\n.label {\n    color: hsl(240, 3%, 46%);\n}\n\n.value {\n    color: white;\n}",
                     "styleUrl": "./personal-best-badge.css"
                 }
             ],
@@ -635,7 +635,7 @@
                     }
                 ]
             },
-            "templateData": "<app-badge variant=\"gold\">\n    <img src=\"assets/images/icon-personal-best.svg\" badge-icon />\n    <span class=\"label\">Personal best:</span>\n    <strong class=\"value\">{{ score() }} WPM</strong>\n</app-badge>"
+            "templateData": "<app-badge class=\"badge\">\n    <img class=\"icon\" src=\"assets/images/icon-personal-best.svg\" badge-icon />\n    <span class=\"label\">Personal best: </span>\n    <span class=\"value\">{{ score() }} WPM</span>\n</app-badge>"
         },
         {
             "name": "TypingTest",

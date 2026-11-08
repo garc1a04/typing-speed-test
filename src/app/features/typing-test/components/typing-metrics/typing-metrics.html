@@ -1,0 +1,20 @@
+<div class="typing-metrics">
+    <app-metric>
+        <span class="typing-metrics-title" metrics-title>WPM: </span>
+        <span class="typing-metrics-value" metric-value>{{ wpm() }}</span>
+    </app-metric>
+
+    <hr class="typing-metrics-line">
+
+    <app-metric>
+        <span class="typing-metrics-title" metrics-title>Accuracy: </span>
+        <span class="typing-metrics-value" metric-value>{{ accuracy() }}</span>
+    </app-metric>
+
+    <hr class="typing-metrics-line">
+
+    <app-metric>
+        <span class="typing-metrics-title" metrics-title>Time: </span>
+        <span class="typing-metrics-value" metric-value>{{ time() }}</span>
+    </app-metric>
+</div>

@@ -1,0 +1,19 @@
+.typing-metrics {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.typing-metrics-title {
+    color: hsl(240, 3%, 46%);
+}
+
+.typing-metrics-value {
+    font-weight: bold;
+    color: white;
+}
+
+.typing-metrics-line {
+    color: hsl(240, 3%, 46%);
+    height: 1rem;
+}

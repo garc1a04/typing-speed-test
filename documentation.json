@@ -157,7 +157,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".badge {\n    display: flex;\n    justify-content: start;\n    align-items: center;\n    gap: 0rem;\n}",
+                    "data": ".badge {\n    display: flex;\n    justify-content: start;\n    align-items: center;\n    gap: 0.5rem;\n}",
                     "styleUrl": "./badge.css"
                 }
             ],
@@ -330,6 +330,117 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "ButtonSelector",
+            "id": "component-ButtonSelector-3f6b4fa2c0a3c9d85f1e229a0ec556a5aaf04907f970f1cbfb5836d7e7800496e960a4ee029cb81534eaa9714fc7d1530f8de99a6dd80d9b3ef730ddfbe854ac",
+            "file": "src/app/shared/components/button-selector/button-selector.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-selector",
+            "styleUrls": [
+                "./button-selector.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-selector.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-button-selector',\n  imports: [],\n  templateUrl: './button-selector.html',\n  styleUrl: './button-selector.css',\n})\nexport class ButtonSelector {}\n",
+            "styleUrl": "./button-selector.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".selector-button {\n    font-size: 1rem;\n    background: transparent;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    color: white;\n    border-radius: 0.4rem;\n    padding: 0.2rem 0.5rem 0.2rem 0.5rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;\n}\n\n.selector-button:hover & .selector-button:focus {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n\n.selector-button:focus-visible {\n    background: transparent;\n    color: white;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    outline: 2px solid hsl(210, 100%, 65%);\n    outline-offset: 2px;\n}",
+                    "styleUrl": "./button-selector.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "SelectorDifficulty",
+                        "type": "component"
+                    },
+                    {
+                        "name": "SelectorMode",
+                        "type": "component"
+                    }
+                ],
+                "outgoing": []
+            },
+            "templateData": "<button class=\"selector-button\">\n    <ng-content></ng-content>\n</button>"
+        },
+        {
+            "name": "Dropdown",
+            "id": "component-Dropdown-9e1956d565425e98879da538ac9e17bb018b009cd31a23e46b0c70c9cdb67b55a6ae688dedca21d8965778cf580403df6fc2c0b3ab7999b4b87d9ac3f1aa05a1",
+            "file": "src/app/shared/components/dropdown/dropdown.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-dropdown",
+            "styleUrls": [
+                "./dropdown.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./dropdown.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-dropdown',\n  imports: [],\n  templateUrl: './dropdown.html',\n  styleUrl: './dropdown.css',\n})\nexport class Dropdown {}\n",
+            "styleUrl": "./dropdown.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./dropdown.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": []
+            },
+            "templateData": "<p>dropdown works!</p>\n"
         },
         {
             "name": "HeaderComponent",
@@ -635,7 +746,201 @@
                     }
                 ]
             },
-            "templateData": "<app-badge class=\"badge\">\n    <img class=\"icon\" src=\"assets/images/icon-personal-best.svg\" badge-icon />\n    <span class=\"label\">Personal best: </span>\n    <span class=\"value\">{{ score() }} WPM</span>\n</app-badge>"
+            "templateData": "<app-badge class=\"app-badge\">\n    <img class=\"icon\" src=\"assets/images/icon-personal-best.svg\" badge-icon />\n    <span class=\"label\">Personal best: </span>\n    <span class=\"value\">{{ score() }} WPM</span>\n</app-badge>"
+        },
+        {
+            "name": "Selector",
+            "id": "component-Selector-c272c34d3e2ecf4f7f153ee37b53f3fce5d65de622475f35137a14addc29ac76238897713312c92a4ba898270addbbc1680fc46874293c2ee28a08cee26c7207",
+            "file": "src/app/shared/components/selector/selector.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-selector",
+            "styleUrls": [
+                "./selector.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./selector.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-selector',\n  imports: [],\n  templateUrl: './selector.html',\n  styleUrl: './selector.css',\n})\nexport class Selector {}\n",
+            "styleUrl": "./selector.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".selector {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n}\n\n.selector-buttons {\n    display: flex;\n    align-items: center;\n    gap: 0.4rem;\n}",
+                    "styleUrl": "./selector.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "SelectorDifficulty",
+                        "type": "component"
+                    },
+                    {
+                        "name": "SelectorMode",
+                        "type": "component"
+                    }
+                ],
+                "outgoing": []
+            },
+            "templateData": "<div class=\"selector\">\n    <div class=\"selector-title\">\n        <ng-content select=\"[selector-title]\" />\n    </div>\n\n    <div class=\"selector-buttons\">\n        <ng-content select=\"[selector-buttons]\" />\n    </div>\n</div>"
+        },
+        {
+            "name": "SelectorDifficulty",
+            "id": "component-SelectorDifficulty-cf9df66043f720e6be878b8d14d8e7ce6c80be734f2939e4d3035ce97c7aae7aa26bef1777e5ba00df1fc8a7d8659230e0ab8735dc4fc11f87e7e012ebdd3117",
+            "file": "src/app/features/typing-test/components/selector-difficulty/selector-difficulty.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-selector-difficulty",
+            "styleUrls": [
+                "./selector-difficulty.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./selector-difficulty.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "Selector"
+                },
+                {
+                    "name": "ButtonSelector"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { ButtonSelector } from '../../../../shared/components/button-selector/button-selector';\nimport { Selector } from '../../../../shared/components/selector/selector';\n\n@Component({\n  selector: 'app-selector-difficulty',\n  imports: [Selector, ButtonSelector],\n  templateUrl: './selector-difficulty.html',\n  styleUrl: './selector-difficulty.css',\n})\nexport class SelectorDifficulty { }\n",
+            "styleUrl": "./selector-difficulty.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".selector-difficult-title {\n    font-size: 0.9rem;\n    color: hsl(240, 3%, 46%);\n}",
+                    "styleUrl": "./selector-difficulty.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "Selector",
+                        "type": "component"
+                    },
+                    {
+                        "name": "ButtonSelector",
+                        "type": "component"
+                    }
+                ]
+            },
+            "templateData": "<app-selector>\n    <span class=\"title\" selector-title> Difficulty: </span>\n\n    <ng-container class=\"selector-difficulty-buttons\" selector-buttons>\n        <app-button-selector>Easy</app-button-selector>\n        <app-button-selector>Medium</app-button-selector>\n        <app-button-selector>Hard</app-button-selector>\n    </ng-container>\n</app-selector>"
+        },
+        {
+            "name": "SelectorMode",
+            "id": "component-SelectorMode-0c9b19bb55f4ffaf60815d822b36736a16b0a723e9c2327517b88c13427436a72018e3951c3c19904bf1ef1f7606d5686e1c1bc06adf41c203fe7429fe63b399",
+            "file": "src/app/features/typing-test/components/selector-mode/selector-mode.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-selector-mode",
+            "styleUrls": [
+                "./selector-mode.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./selector-mode.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "Selector"
+                },
+                {
+                    "name": "ButtonSelector"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { ButtonSelector } from '../../../../shared/components/button-selector/button-selector';\nimport { Selector } from '../../../../shared/components/selector/selector';\n\n@Component({\n  selector: 'app-selector-mode',\n  imports: [Selector, ButtonSelector],\n  templateUrl: './selector-mode.html',\n  styleUrl: './selector-mode.css',\n})\nexport class SelectorMode { }\n",
+            "styleUrl": "./selector-mode.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".selector-mode-title {\n    font-size: 0.9rem;\n    color: hsl(240, 3%, 46%);\n}",
+                    "styleUrl": "./selector-mode.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "Selector",
+                        "type": "component"
+                    },
+                    {
+                        "name": "ButtonSelector",
+                        "type": "component"
+                    }
+                ]
+            },
+            "templateData": "<app-selector>\n    <span class=\"selector-mode-title\" selector-title> Mode: </span>\n\n    <ng-container class=\"selector-mode-buttons\" selector-buttons>\n        <app-button-selector>Timed (60s)</app-button-selector>\n        <app-button-selector>Passage</app-button-selector>\n    </ng-container>\n</app-selector>"
         },
         {
             "name": "TypingTest",
@@ -756,7 +1061,7 @@
         "children": []
     },
     "coverage": {
-        "count": 8,
+        "count": 5,
         "status": "low",
         "files": [
             {
@@ -798,6 +1103,24 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/features/typing-test/components/selector-difficulty/selector-difficulty.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SelectorDifficulty",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/typing-test/components/selector-mode/selector-mode.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SelectorMode",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/features/typing-test/typing-test.ts",
                 "type": "component",
                 "linktype": "component",
@@ -811,6 +1134,33 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "Badge",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/button-selector/button-selector.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonSelector",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/dropdown/dropdown.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Dropdown",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/components/selector/selector.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "Selector",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

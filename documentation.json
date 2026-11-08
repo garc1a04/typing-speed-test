@@ -370,7 +370,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".selector-button {\n    font-size: 1rem;\n    background: transparent;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    color: white;\n    border-radius: 0.4rem;\n    padding: 0.2rem 0.5rem 0.2rem 0.5rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;\n}\n\n.selector-button:hover & .selector-button:focus {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n\n.selector-button:focus-visible {\n    background: transparent;\n    color: white;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    outline: 2px solid hsl(210, 100%, 65%);\n    outline-offset: 2px;\n}",
+                    "data": ".selector-button {\n    font-size: 1rem;\n    background: transparent;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    color: white;\n    border-radius: 0.4rem;\n    padding: 0.2rem 0.5rem 0.2rem 0.5rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;\n}\n\n.selector-button:hover {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n.selector-button:focus {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n.selector-button:focus-visible {\n    background: transparent;\n    color: white;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    outline: 2px solid hsl(210, 100%, 65%);\n    outline-offset: 2px;\n}",
                     "styleUrl": "./button-selector.css"
                 }
             ],
@@ -390,57 +390,6 @@
                 "outgoing": []
             },
             "templateData": "<button class=\"selector-button\">\n    <ng-content></ng-content>\n</button>"
-        },
-        {
-            "name": "Dropdown",
-            "id": "component-Dropdown-9e1956d565425e98879da538ac9e17bb018b009cd31a23e46b0c70c9cdb67b55a6ae688dedca21d8965778cf580403df6fc2c0b3ab7999b4b87d9ac3f1aa05a1",
-            "file": "src/app/shared/components/dropdown/dropdown.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "app-dropdown",
-            "styleUrls": [
-                "./dropdown.css"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./dropdown.html"
-            ],
-            "templateVariables": [],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "coverageIgnore": false,
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": true,
-            "imports": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-dropdown',\n  imports: [],\n  templateUrl: './dropdown.html',\n  styleUrl: './dropdown.css',\n})\nexport class Dropdown {}\n",
-            "styleUrl": "./dropdown.css",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "",
-                    "styleUrl": "./dropdown.css"
-                }
-            ],
-            "stylesData": "",
-            "extends": [],
-            "relationships": {
-                "incoming": [],
-                "outgoing": []
-            },
-            "templateData": "<p>dropdown works!</p>\n"
         },
         {
             "name": "HeaderComponent",
@@ -553,6 +502,62 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "Metric",
+            "id": "component-Metric-445207ba5dcc59b0c2fcd0b89eaca61b68cecc74825862df4a43582c5e520ada3612d3349efd5d0b5f76116871ef7a7038f93e1cac5d014e9b22eaba3813f0a6",
+            "file": "src/app/shared/components/metric/metric.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-metric",
+            "styleUrls": [
+                "./metric.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./metric.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-metric',\n  imports: [],\n  templateUrl: './metric.html',\n  styleUrl: './metric.css',\n})\nexport class Metric {}\n",
+            "styleUrl": "./metric.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".metrics {\n    display: flex;\n    gap: 0.5rem;\n}\n\n.metric-value>* {\n    font-weight: bold;\n    color: white\n}",
+                    "styleUrl": "./metric.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "TypingMetrics",
+                        "type": "component"
+                    }
+                ],
+                "outgoing": []
+            },
+            "templateData": "<div class=\"metrics\">\n    <div class=\"metrics-title\">\n        <ng-content select=\"[metrics-title]\" />\n    </div>\n\n    <div class=\"metric-value\">\n        <ng-content select=\"[metric-value]\" />\n    </div>\n</div>"
         },
         {
             "name": "PageComponent",
@@ -854,7 +859,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".selector-difficult-title {\n    font-size: 0.9rem;\n    color: hsl(240, 3%, 46%);\n}",
+                    "data": ".selector-difficult-title {\n    font-size: 1rem;\n    color: hsl(240, 3%, 46%);\n}",
                     "styleUrl": "./selector-difficulty.css"
                 }
             ],
@@ -873,7 +878,7 @@
                     }
                 ]
             },
-            "templateData": "<app-selector>\n    <span class=\"title\" selector-title> Difficulty: </span>\n\n    <ng-container class=\"selector-difficulty-buttons\" selector-buttons>\n        <app-button-selector>Easy</app-button-selector>\n        <app-button-selector>Medium</app-button-selector>\n        <app-button-selector>Hard</app-button-selector>\n    </ng-container>\n</app-selector>"
+            "templateData": "<app-selector>\n    <span class=\"selector-difficult-title\" selector-title> Difficulty: </span>\n\n    <ng-container class=\"selector-difficulty-buttons\" selector-buttons>\n        <app-button-selector>Easy</app-button-selector>\n        <app-button-selector>Medium</app-button-selector>\n        <app-button-selector>Hard</app-button-selector>\n    </ng-container>\n</app-selector>"
         },
         {
             "name": "SelectorMode",
@@ -921,7 +926,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".selector-mode-title {\n    font-size: 0.9rem;\n    color: hsl(240, 3%, 46%);\n}",
+                    "data": ".selector-mode-title {\n    font-size: 1rem;\n    color: hsl(240, 3%, 46%);\n}",
                     "styleUrl": "./selector-mode.css"
                 }
             ],
@@ -941,6 +946,109 @@
                 ]
             },
             "templateData": "<app-selector>\n    <span class=\"selector-mode-title\" selector-title> Mode: </span>\n\n    <ng-container class=\"selector-mode-buttons\" selector-buttons>\n        <app-button-selector>Timed (60s)</app-button-selector>\n        <app-button-selector>Passage</app-button-selector>\n    </ng-container>\n</app-selector>"
+        },
+        {
+            "name": "TypingMetrics",
+            "id": "component-TypingMetrics-f71e7928a3928ec3d3365df272c307db4042cac3238af4785e7a302e547866d782d797d3d971c90bb2e4a6fd296369341aa75422a83c8ebad7dd3c15b59fe0b3",
+            "file": "src/app/features/typing-test/components/typing-metrics/typing-metrics.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-typing-metrics",
+            "styleUrls": [
+                "./typing-metrics.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./typing-metrics.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "accuracy",
+                    "coverageIgnore": false,
+                    "defaultValue": "100",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "rawdescription": "\n",
+                    "required": false
+                },
+                {
+                    "name": "time",
+                    "coverageIgnore": false,
+                    "defaultValue": "'00:00'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "rawdescription": "\n",
+                    "required": false
+                },
+                {
+                    "name": "wpm",
+                    "coverageIgnore": false,
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "rawdescription": "\n",
+                    "required": false
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "Metric"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, input } from '@angular/core';\nimport { Metric } from '../../../../shared/components/metric/metric';\n\n@Component({\n  selector: 'app-typing-metrics',\n  imports: [Metric],\n  templateUrl: './typing-metrics.html',\n  styleUrl: './typing-metrics.css',\n})\nexport class TypingMetrics {\n  wpm = input<number>(0);\n  accuracy = input<number>(100);\n  time = input<string | number>('00:00');\n}\n",
+            "styleUrl": "./typing-metrics.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".typing-metrics {\n    display: flex;\n    align-items: center;\n}",
+                    "styleUrl": "./typing-metrics.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "Metric",
+                        "type": "component"
+                    }
+                ]
+            },
+            "templateData": "<div class=\"typing-metrics\">\n    <app-metric>\n        <span metrics-title>WPM: </span>\n        <span metric-value>{{ wpm() }}</span>\n    </app-metric>\n\n    <hr>\n\n    <app-metric>\n        <span metrics-title>Accuracy: </span>\n        <span metric-value>{{ accuracy() }}</span>\n    </app-metric>\n\n    <hr>\n\n    <app-metric>\n        <span metrics-title>Time: </span>\n        <span metric-value>{{ time() }}</span>\n    </app-metric>\n</div>"
         },
         {
             "name": "TypingTest",
@@ -1121,6 +1229,15 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/features/typing-test/components/typing-metrics/typing-metrics.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TypingMetrics",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/features/typing-test/typing-test.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1148,10 +1265,10 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/shared/components/dropdown/dropdown.ts",
+                "filePath": "src/app/shared/components/metric/metric.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "Dropdown",
+                "name": "Metric",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

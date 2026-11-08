@@ -1,0 +1,30 @@
+.selector-button {
+    font-size: 1rem;
+    background: transparent;
+    border: solid 0.01rem hsl(240, 3%, 46%);
+    color: white;
+    border-radius: 0.4rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.selector-button:hover {
+    background: transparent;
+    color: hsl(210, 100%, 65%);
+    border-color: hsl(210, 100%, 65%);
+}
+
+.selector-button:focus {
+    background: transparent;
+    color: hsl(210, 100%, 65%);
+    border-color: hsl(210, 100%, 65%);
+}
+
+.selector-button:focus-visible {
+    background: transparent;
+    color: white;
+    border: solid 0.01rem hsl(240, 3%, 46%);
+    outline: 2px solid hsl(210, 100%, 65%);
+    outline-offset: 2px;
+}

@@ -13,7 +13,7 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {
       angularOptions: {
-        styles: ['src/styles.css'],
+        styles: ['../src/styles.css'],
       },
     },
   },

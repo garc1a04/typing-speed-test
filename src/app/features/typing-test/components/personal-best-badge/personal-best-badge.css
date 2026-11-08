@@ -1,0 +1,11 @@
+.icon {
+    width: 100%;
+}
+
+.label {
+    color: hsl(240, 3%, 46%);
+}
+
+.value {
+    color: white;
+}

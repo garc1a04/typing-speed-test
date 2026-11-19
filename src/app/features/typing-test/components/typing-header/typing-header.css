@@ -1,0 +1,5 @@
+.typing-header__principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

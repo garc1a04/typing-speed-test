@@ -542,7 +542,7 @@
         },
         {
             "name": "TypingHeader",
-            "id": "component-TypingHeader-22520b933d576278ee5942975c87336178f4142fc22f168da61e3f7e6ff5fd0b9d9ed337b51a1a905b4b460f7493691feb18561fb26503b04a87dc80e9c5b8c4",
+            "id": "component-TypingHeader-570caccf3f5f4e6466a9855ed680560a8253fb99ba379a316a582380d11186bbdc440685f74fbbc3adca127802ccbb1af7580b10d70208df94bd5e5e57942294",
             "file": "src/app/features/typing-test/components/typing-header/typing-header.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -560,7 +560,21 @@
             "templateVariables": [],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "personalBestScore",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "rawdescription": "\n",
+                    "required": true
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
@@ -587,7 +601,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { PersonalBestBadge } from '../personal-best-badge/personal-best-badge';\nimport { SelectorDifficulty } from '../selector-difficulty/selector-difficulty';\nimport { SelectorMode } from '../selector-mode/selector-mode';\nimport { TypingMetrics } from '../typing-metrics/typing-metrics';\n\n@Component({\n  selector: 'app-typing-header',\n  imports: [PersonalBestBadge, SelectorDifficulty, SelectorMode, TypingMetrics],\n  templateUrl: './typing-header.html',\n  styleUrl: './typing-header.css',\n})\nexport class TypingHeader { }\n",
+            "sourceCode": "import { Component, input } from '@angular/core';\nimport { PersonalBestBadge } from '../personal-best-badge/personal-best-badge';\nimport { SelectorDifficulty } from '../selector-difficulty/selector-difficulty';\nimport { SelectorMode } from '../selector-mode/selector-mode';\nimport { TypingMetrics } from '../typing-metrics/typing-metrics';\n\n@Component({\n  selector: 'app-typing-header',\n  imports: [PersonalBestBadge, SelectorDifficulty, SelectorMode, TypingMetrics],\n  templateUrl: './typing-header.html',\n  styleUrl: './typing-header.css',\n})\nexport class TypingHeader {\n  personalBestScore = input.required<number>();\n}\n",
             "styleUrl": "./typing-header.css",
             "assetsDirs": [],
             "styleUrlsData": [
@@ -619,7 +633,7 @@
                     }
                 ]
             },
-            "templateData": "<section class=\"typing-header\">\n    <section class=\"typing-header__principal\">\n        <img src=\"assets/images/logo-large.svg\">\n        <app-personal-best-badge></app-personal-best-badge>\n    </section>\n    <section class=\"typing-header__metrics\">\n\n    </section>\n</section>"
+            "templateData": "<section class=\"typing-header\">\n    <section class=\"typing-header__principal\">\n        <img src=\"assets/images/logo-large.svg\">\n        <app-personal-best-badge [score]=\"personalBestScore()\" />\n    </section>\n    <section class=\"typing-header__metrics\">\n\n    </section>\n</section>"
         },
         {
             "name": "TypingMetrics",
@@ -913,7 +927,7 @@
                 "linktype": "component",
                 "name": "TypingHeader",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {

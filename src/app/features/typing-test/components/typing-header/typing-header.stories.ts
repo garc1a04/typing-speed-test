@@ -14,4 +14,8 @@ const meta: Meta<TypingHeader> = {
 
 export default meta;
 type Story = StoryObj<TypingHeader>;
-export const Default: Story = {};
+export const Default: Story = {
+    args: {
+        personalBestScore: 95,
+    },
+};

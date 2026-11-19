@@ -1,9 +1,17 @@
 <section class="typing-header">
     <section class="typing-header__principal">
         <img src="assets/images/logo-large.svg">
-        <app-personal-best-badge></app-personal-best-badge>
+        <app-personal-best-badge [score]="personalBestScore()" />
     </section>
-    <section class="typing-header__metrics">
+    <section class="typing-header__data">
 
+        <div class="typing-header__metrics">
+            <app-typing-metrics />
+        </div>
+
+        <div class="typing-header__selectors">
+            <app-selector-difficulty />
+            <app-selector-mode />
+        </div>
     </section>
 </section>

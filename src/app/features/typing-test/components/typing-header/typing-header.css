@@ -2,4 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.typing-header__selectors,
+.typing-header__data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
 }

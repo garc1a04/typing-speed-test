@@ -1,6 +1,13 @@
 .typing-metrics {
     display: flex;
     align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.typing-metrics>*:not(:last-child) {
+    border-right: 1px solid #444;
+    padding-right: 1.5rem;
 }
 
 .typing-metrics-title {

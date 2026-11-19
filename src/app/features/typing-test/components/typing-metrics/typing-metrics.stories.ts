@@ -17,7 +17,6 @@ const meta: Meta<TypingMetrics> = {
 export default meta;
 type Story = StoryObj<TypingMetrics>;
 
-/** Estado padrão / inicial */
 export const Default: Story = {
     args: {
         wpm: 0,
@@ -26,7 +25,6 @@ export const Default: Story = {
     },
 };
 
-/** Exemplo durante um teste ativo */
 export const InProgress: Story = {
     args: {
         wpm: 65,

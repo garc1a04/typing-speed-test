@@ -2,8 +2,11 @@
     <span class="selector-difficult-title" selector-title> Difficulty: </span>
 
     <ng-container class="selector-difficulty-buttons" selector-buttons>
-        <app-button-selector>Easy</app-button-selector>
-        <app-button-selector>Medium</app-button-selector>
-        <app-button-selector>Hard</app-button-selector>
+        <app-button-selector [isActive]="selectedLevel() === 1" (click)="selectDifficulty(1)">Easy</app-button-selector>
+
+        <app-button-selector [isActive]="selectedLevel() === 2"
+            (click)="selectDifficulty(2)">Medium</app-button-selector>
+
+        <app-button-selector [isActive]="selectedLevel() === 3" (click)="selectDifficulty(3)">Hard</app-button-selector>
     </ng-container>
 </app-selector>

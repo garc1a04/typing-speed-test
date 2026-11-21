@@ -1,0 +1,25 @@
+.typing_action {
+    border: 0.1rem solid #444;
+    border-left: 0;
+    border-right: 0;
+    padding: 1rem 0;
+}
+
+.typing_action__text {
+    color: hsl(240, 1%, 59%);
+    font-size: 3.18rem;
+}
+
+.typing_action__text_type {
+    background-color: #444;
+    padding: 0rem 0.2rem;
+}
+
+.is_correct {
+    color: #4caf50;
+}
+
+.is_incorrect {
+    color: #f44336;
+    text-decoration: underline;
+}

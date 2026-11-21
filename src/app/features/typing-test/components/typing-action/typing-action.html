@@ -1,0 +1,11 @@
+<section class="typing_action" appTypingListenerDirective (keyPressed)="engine.registerKey($event)">
+    <div class="typing_action__game">
+        <p class="typing_action__text">
+            @for (char of engine.characters(); track $index) {
+            <span [class.typing_action__text_type]="$index === engine.currentIndex()"
+                [class.is_correct]="$index < engine.currentIndex() && engine.isCharCorrect($index)"
+                [class.is_incorrect]="$index < engine.currentIndex() && !engine.isCharCorrect($index)">{{ char }}</span>
+            }
+        </p>
+    </div>
+</section>

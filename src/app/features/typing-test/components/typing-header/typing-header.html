@@ -10,7 +10,7 @@
         </div>
 
         <div class="typing-header__selectors">
-            <app-selector-difficulty />
+            <app-selector-difficulty (difficultySelected)="onDifficultyChange($event)" />
             <app-selector-mode />
         </div>
     </section>

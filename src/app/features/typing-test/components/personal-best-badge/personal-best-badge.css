@@ -4,8 +4,10 @@
 
 .label {
     color: hsl(240, 3%, 46%);
+    font-size: 2rem;
 }
 
 .value {
     color: white;
+    font-size: 2rem;
 }

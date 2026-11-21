@@ -1,11 +1,392 @@
 {
     "pipes": [],
     "interfaces": [],
-    "injectables": [],
+    "injectables": [
+        {
+            "name": "TypingEngineService",
+            "id": "injectable-TypingEngineService-83b61b475bc24e52369e735fe7b566d5cda07bee7e08f1a0546a31e3a26a7020fc18d337f196b9cece08449ca083475cb475425fea102db744320c1af9bce441",
+            "file": "src/app/features/typing-test/services/typing-engine.service.ts",
+            "coverageIgnore": false,
+            "properties": [
+                {
+                    "name": "characters",
+                    "coverageIgnore": false,
+                    "defaultValue": "computed(() => this.text().split(''))",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 8,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                },
+                {
+                    "name": "currentIndex",
+                    "coverageIgnore": false,
+                    "defaultValue": "computed(() => this.typed().length)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                },
+                {
+                    "name": "isFinished",
+                    "coverageIgnore": false,
+                    "defaultValue": "computed(\n    () => this.text().length > 0 && this.currentIndex() >= this.text().length\n  )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                },
+                {
+                    "name": "text",
+                    "coverageIgnore": false,
+                    "defaultValue": "signal('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 5,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "typed",
+                    "coverageIgnore": false,
+                    "defaultValue": "signal('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 6,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        123,
+                        148
+                    ]
+                },
+                {
+                    "name": "typedText",
+                    "coverageIgnore": false,
+                    "defaultValue": "this.typed.asReadonly()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 10,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "isCharCorrect",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "loadText",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerKey",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "key",
+                            "type": "string",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "key",
+                            "type": "string",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "reset",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "newText",
+                            "type": "string",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "newText",
+                            "type": "string",
+                            "optional": true,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { computed, Injectable, signal } from '@angular/core';\n\n@Injectable()\nexport class TypingEngineService {\n  private readonly text = signal('');\n  private readonly typed = signal('');\n\n  readonly characters = computed(() => this.text().split(''));\n  readonly currentIndex = computed(() => this.typed().length);\n  readonly typedText = this.typed.asReadonly();\n\n  readonly isFinished = computed(\n    () => this.text().length > 0 && this.currentIndex() >= this.text().length\n  );\n\n  loadText(text: string): void {\n    this.text.set(text);\n    this.typed.set('');\n  }\n\n  registerKey(key: string): void {\n    if (this.isFinished()) return;\n\n    if (key.length === 1) {\n      this.typed.update((prev) => prev + key);\n    }\n  }\n\n  isCharCorrect(index: number): boolean {\n    return this.typed()[index] === this.characters()[index];\n  }\n\n  reset(newText?: string): void {\n    if (newText !== undefined) {\n      this.text.set(newText);\n    }\n    this.typed.set('');\n  }\n}",
+            "extends": [],
+            "type": "injectable",
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "TypingAction",
+                        "type": "component"
+                    }
+                ],
+                "outgoing": []
+            }
+        }
+    ],
     "guards": [],
     "interceptors": [],
     "classes": [],
-    "directives": [],
+    "directives": [
+        {
+            "name": "TypingListenerDirective",
+            "id": "directive-TypingListenerDirective-ab4aa32d379d5826cd33f76ac658a058b223a82f81a270f8b08598efbec6a7a84544c1366bc1a3c276d2d0566b902be71a13c759af905d061bb9b4adcc65b559",
+            "file": "src/app/features/typing-test/directives/typing-listener.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Directive, HostListener, output } from '@angular/core';\n\n@Directive({\n  selector: '[appTypingListenerDirective]',\n})\nexport class TypingListenerDirective {\n  readonly keyPressed = output<string>();\n\n  @HostListener('window:keydown', ['$event'])\n  onKeyDown(event: KeyboardEvent): void {\n    if (event.ctrlKey || event.altKey || event.metaKey) return;\n\n    if (event.key === 'Backspace' || event.key.length === 1) {\n      event.preventDefault();\n      this.keyPressed.emit(event.key);\n    }\n  }\n}\n",
+            "selector": "[appTypingListenerDirective]",
+            "providers": [],
+            "hostDirectives": [],
+            "standalone": true,
+            "inputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "keyPressed",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 7,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [
+                {
+                    "coverageIgnore": false,
+                    "name": "window:keydown",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "KeyboardEvent",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "argsDecorator": [
+                        "$event"
+                    ],
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "onKeyDown",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "KeyboardEvent",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 10,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "decorators": [
+                        {
+                            "name": "HostListener",
+                            "stringifiedArguments": "'window:keydown', ['$event']"
+                        }
+                    ],
+                    "modifierKind": [
+                        171
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "KeyboardEvent",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "coverageIgnore": false,
+            "extends": [],
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "TypingAction",
+                        "type": "component"
+                    }
+                ],
+                "outgoing": []
+            }
+        }
+    ],
     "components": [
         {
             "name": "App",
@@ -180,7 +561,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".selector-button {\n    font-size: 1rem;\n    background: transparent;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    color: white;\n    border-radius: 0.4rem;\n    padding: 0.2rem 0.5rem 0.2rem 0.5rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;\n}\n\n.selector-button:hover {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n.selector-button:focus {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n.selector-button:focus-visible {\n    background: transparent;\n    color: white;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    outline: 2px solid hsl(210, 100%, 65%);\n    outline-offset: 2px;\n}",
+                    "data": ".selector-button {\n    font-size: 2rem;\n    background: transparent;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    color: white;\n    border-radius: 0.4rem;\n    padding: 0.2rem 0.5rem 0.2rem 0.5rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;\n}\n\n.selector-button:hover {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n.selector-button:focus {\n    background: transparent;\n    color: hsl(210, 100%, 65%);\n    border-color: hsl(210, 100%, 65%);\n}\n\n.selector-button:focus-visible {\n    background: transparent;\n    color: white;\n    border: solid 0.01rem hsl(240, 3%, 46%);\n    outline: 2px solid hsl(210, 100%, 65%);\n    outline-offset: 2px;\n}",
                     "styleUrl": "./button-selector.css"
                 }
             ],
@@ -240,7 +621,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".metrics {\n    display: flex;\n    gap: 0.5rem;\n}",
+                    "data": "",
                     "styleUrl": "./metric.css"
                 }
             ],
@@ -255,7 +636,7 @@
                 ],
                 "outgoing": []
             },
-            "templateData": "<div class=\"metrics\">\n    <div class=\"metrics-title\">\n        <ng-content select=\"[metrics-title]\" />\n    </div>\n\n    <div class=\"metric-value\">\n        <ng-content select=\"[metric-value]\" />\n    </div>\n</div>"
+            "templateData": "<div class=\"metrics\">\n    <ng-content select=\"[metrics-title]\" />\n    <ng-content select=\"[metric-value]\" />\n</div>"
         },
         {
             "name": "PersonalBestBadge",
@@ -314,7 +695,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".icon {\n    width: 100%;\n}\n\n.label {\n    color: hsl(240, 3%, 46%);\n}\n\n.value {\n    color: white;\n}",
+                    "data": ".icon {\n    width: 100%;\n}\n\n.label {\n    color: hsl(240, 3%, 46%);\n    font-size: 2rem;\n}\n\n.value {\n    color: white;\n    font-size: 2rem;\n}",
                     "styleUrl": "./personal-best-badge.css"
                 }
             ],
@@ -398,7 +779,7 @@
         },
         {
             "name": "SelectorDifficulty",
-            "id": "component-SelectorDifficulty-cf9df66043f720e6be878b8d14d8e7ce6c80be734f2939e4d3035ce97c7aae7aa26bef1777e5ba00df1fc8a7d8659230e0ab8735dc4fc11f87e7e012ebdd3117",
+            "id": "component-SelectorDifficulty-6e203df2d5636e2d46a926fe3a329d8f023bfbee5655f365c08ee29abe4c7e6d85938cab6428c88d6fd5905ece13bd2ae936ed8e62cb7a36060a19d1123119c7",
             "file": "src/app/features/typing-test/components/selector-difficulty/selector-difficulty.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -417,9 +798,80 @@
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
+            "outputsClass": [
+                {
+                    "name": "difficultySelected",
+                    "coverageIgnore": false,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DifficultyLevel",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ],
+                    "required": false
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "selectedLevel",
+                    "coverageIgnore": false,
+                    "defaultValue": "signal<DifficultyLevel>(1)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        124,
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "selectDifficulty",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "level",
+                            "type": "DifficultyLevel",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "level",
+                            "type": "DifficultyLevel",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "coverageIgnore": false,
             "deprecated": false,
             "deprecationMessage": "",
@@ -437,12 +889,12 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { ButtonSelector } from '../../../../shared/components/button-selector/button-selector';\nimport { Selector } from '../../../../shared/components/selector/selector';\n\n@Component({\n  selector: 'app-selector-difficulty',\n  imports: [Selector, ButtonSelector],\n  templateUrl: './selector-difficulty.html',\n  styleUrl: './selector-difficulty.css',\n})\nexport class SelectorDifficulty { }\n",
+            "sourceCode": "import { Component, output, signal } from '@angular/core';\nimport { ButtonSelector } from '../../../../shared/components/button-selector/button-selector';\nimport { Selector } from '../../../../shared/components/selector/selector';\n\nexport type DifficultyLevel = 1 | 2 | 3;\n\n@Component({\n  selector: 'app-selector-difficulty',\n  imports: [Selector, ButtonSelector],\n  templateUrl: './selector-difficulty.html',\n  styleUrl: './selector-difficulty.css',\n})\nexport class SelectorDifficulty {\n  readonly difficultySelected = output<DifficultyLevel>();\n  protected readonly selectedLevel = signal<DifficultyLevel>(1);\n\n  selectDifficulty(level: DifficultyLevel): void {\n    this.selectedLevel.set(level);\n    this.difficultySelected.emit(level);\n  }\n}",
             "styleUrl": "./selector-difficulty.css",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".selector-difficult-title {\n    font-size: 1rem;\n    color: hsl(240, 3%, 46%);\n}",
+                    "data": ".selector-difficult-title {\n    font-size: 2rem;\n    color: hsl(240, 3%, 46%);\n}",
                     "styleUrl": "./selector-difficulty.css"
                 }
             ],
@@ -466,7 +918,7 @@
                     }
                 ]
             },
-            "templateData": "<app-selector>\n    <span class=\"selector-difficult-title\" selector-title> Difficulty: </span>\n\n    <ng-container class=\"selector-difficulty-buttons\" selector-buttons>\n        <app-button-selector>Easy</app-button-selector>\n        <app-button-selector>Medium</app-button-selector>\n        <app-button-selector>Hard</app-button-selector>\n    </ng-container>\n</app-selector>"
+            "templateData": "<app-selector>\n    <span class=\"selector-difficult-title\" selector-title> Difficulty: </span>\n\n    <ng-container class=\"selector-difficulty-buttons\" selector-buttons>\n        <app-button-selector [isActive]=\"selectedLevel() === 1\" (click)=\"selectDifficulty(1)\">Easy</app-button-selector>\n\n        <app-button-selector [isActive]=\"selectedLevel() === 2\"\n            (click)=\"selectDifficulty(2)\">Medium</app-button-selector>\n\n        <app-button-selector [isActive]=\"selectedLevel() === 3\" (click)=\"selectDifficulty(3)\">Hard</app-button-selector>\n    </ng-container>\n</app-selector>"
         },
         {
             "name": "SelectorMode",
@@ -514,7 +966,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".selector-mode-title {\n    font-size: 1rem;\n    color: hsl(240, 3%, 46%);\n}",
+                    "data": ".selector-mode-title {\n    font-size: 2rem;\n    color: hsl(240, 3%, 46%);\n}",
                     "styleUrl": "./selector-mode.css"
                 }
             ],
@@ -541,8 +993,121 @@
             "templateData": "<app-selector>\n    <span class=\"selector-mode-title\" selector-title> Mode: </span>\n\n    <ng-container class=\"selector-mode-buttons\" selector-buttons>\n        <app-button-selector>Timed (60s)</app-button-selector>\n        <app-button-selector>Passage</app-button-selector>\n    </ng-container>\n</app-selector>"
         },
         {
+            "name": "TypingAction",
+            "id": "component-TypingAction-758ab89986c1f12ec1e76f14c6a9f79d88837078c224f3cf3a9f66087eb252709e7e1dd26a4c27d0a7de2337f1a97c31012749235fe270788aa76023ea68699a",
+            "file": "src/app/features/typing-test/components/typing-action/typing-action.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "TypingEngineService",
+                    "type": "injectable"
+                }
+            ],
+            "selector": "app-typing-action",
+            "styleUrls": [
+                "./typing-action.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./typing-action.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "engine",
+                    "coverageIgnore": false,
+                    "defaultValue": "inject(TypingEngineService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "coverageIgnore": false,
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": ""
+                }
+            ],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "TypingListenerDirective",
+                    "type": "directive"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, inject, OnInit } from '@angular/core';\nimport { TypingListenerDirective } from '../../directives/typing-listener.directive';\nimport { TypingEngineService } from '../../services/typing-engine.service';\n\n@Component({\n  selector: 'app-typing-action',\n  imports: [TypingListenerDirective],\n  providers: [TypingEngineService],\n  templateUrl: './typing-action.html',\n  styleUrl: './typing-action.css',\n})\nexport class TypingAction implements OnInit {\n  readonly engine = inject(TypingEngineService);\n\n  ngOnInit(): void {\n    this.engine.loadText(\"The archaeological expedition unearthed artifacts that complicated prevailing theories about Bronze Age trade networks. Obsidian from Anatolia, lapis lazuli from Afghanistan, and amber from the Baltic—all discovered in a single Mycenaean tomb—suggested commercial connections far more extensive than previously hypothesized. \\\"We've underestimated ancient peoples' navigational capabilities and their appetite for luxury goods,\\\" the lead researcher observed. \\\"Globalization isn't as modern as we assume.\\\"\");\n  }\n}\n",
+            "styleUrl": "./typing-action.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".typing_action {\n    border: 0.1rem solid #444;\n    border-left: 0;\n    border-right: 0;\n    padding: 1rem 0;\n}\n\n.typing_action__text {\n    color: hsl(240, 1%, 59%);\n    font-size: 3.18rem;\n}\n\n.typing_action__text_type {\n    background-color: #444;\n    padding: 0rem 0.2rem;\n}\n\n.is_correct {\n    color: #4caf50;\n}\n\n.is_incorrect {\n    color: #f44336;\n    text-decoration: underline;\n}",
+                    "styleUrl": "./typing-action.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "relationships": {
+                "incoming": [
+                    {
+                        "name": "TypingTest",
+                        "type": "component"
+                    }
+                ],
+                "outgoing": [
+                    {
+                        "name": "TypingListenerDirective",
+                        "type": "directive"
+                    },
+                    {
+                        "name": "TypingEngineService",
+                        "type": "injectable"
+                    },
+                    {
+                        "name": "OnInit",
+                        "type": "interface"
+                    }
+                ]
+            },
+            "templateData": "<section class=\"typing_action\" appTypingListenerDirective (keyPressed)=\"engine.registerKey($event)\">\n    <div class=\"typing_action__game\">\n        <p class=\"typing_action__text\">\n            @for (char of engine.characters(); track $index) {\n            <span [class.typing_action__text_type]=\"$index === engine.currentIndex()\"\n                [class.is_correct]=\"$index < engine.currentIndex() && engine.isCharCorrect($index)\"\n                [class.is_incorrect]=\"$index < engine.currentIndex() && !engine.isCharCorrect($index)\">{{ char }}</span>\n            }\n        </p>\n    </div>\n</section>"
+        },
+        {
             "name": "TypingHeader",
-            "id": "component-TypingHeader-570caccf3f5f4e6466a9855ed680560a8253fb99ba379a316a582380d11186bbdc440685f74fbbc3adca127802ccbb1af7580b10d70208df94bd5e5e57942294",
+            "id": "component-TypingHeader-1ef9db7693403c22cd3bd0eb1aa115a457a7b5f2a97bc8accc927903fd9fd37f758331a6c1ea66d3c4b313e3e2cfaf928a1b336c95c26369043d3e40916e7949",
             "file": "src/app/features/typing-test/components/typing-header/typing-header.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -562,6 +1127,20 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
+                    "name": "accuracy",
+                    "coverageIgnore": false,
+                    "defaultValue": "100",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "rawdescription": "\n",
+                    "required": false
+                },
+                {
                     "name": "personalBestScore",
                     "coverageIgnore": false,
                     "deprecated": false,
@@ -570,14 +1149,96 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 14,
+                    "line": 17,
                     "rawdescription": "\n",
                     "required": true
+                },
+                {
+                    "name": "time",
+                    "coverageIgnore": false,
+                    "defaultValue": "'00:00'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "rawdescription": "\n",
+                    "required": false
+                },
+                {
+                    "name": "wpm",
+                    "coverageIgnore": false,
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "rawdescription": "\n",
+                    "required": false
                 }
             ],
             "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "difficulty",
+                    "coverageIgnore": false,
+                    "defaultValue": "signal<DifficultyLevel>(1)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        124,
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onDifficultyChange",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "level",
+                            "type": "DifficultyLevel",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "level",
+                            "type": "DifficultyLevel",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "coverageIgnore": false,
             "deprecated": false,
             "deprecationMessage": "",
@@ -601,19 +1262,24 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, input } from '@angular/core';\nimport { PersonalBestBadge } from '../personal-best-badge/personal-best-badge';\nimport { SelectorDifficulty } from '../selector-difficulty/selector-difficulty';\nimport { SelectorMode } from '../selector-mode/selector-mode';\nimport { TypingMetrics } from '../typing-metrics/typing-metrics';\n\n@Component({\n  selector: 'app-typing-header',\n  imports: [PersonalBestBadge, SelectorDifficulty, SelectorMode, TypingMetrics],\n  templateUrl: './typing-header.html',\n  styleUrl: './typing-header.css',\n})\nexport class TypingHeader {\n  personalBestScore = input.required<number>();\n}\n",
+            "sourceCode": "import { Component, input, signal } from '@angular/core';\nimport { PersonalBestBadge } from '../personal-best-badge/personal-best-badge';\nimport { DifficultyLevel, SelectorDifficulty } from '../selector-difficulty/selector-difficulty';\nimport { SelectorMode } from '../selector-mode/selector-mode';\nimport { TypingMetrics } from '../typing-metrics/typing-metrics';\n\n@Component({\n  selector: 'app-typing-header',\n  imports: [PersonalBestBadge, SelectorDifficulty, SelectorMode, TypingMetrics],\n  templateUrl: './typing-header.html',\n  styleUrl: './typing-header.css',\n})\nexport class TypingHeader {\n  wpm = input<number>(0);\n  accuracy = input<number>(100);\n  time = input<string | number>('00:00');\n  personalBestScore = input.required<number>();\n  protected readonly difficulty = signal<DifficultyLevel>(1);\n\n  onDifficultyChange(level: DifficultyLevel): void {\n    this.difficulty.set(level);\n  }\n}\n",
             "styleUrl": "./typing-header.css",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".typing-header__principal {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n}",
+                    "data": ".typing-header__principal {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    margin-bottom: 5rem;\n}\n\n.typing-header__selectors,\n.typing-header__data {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    flex-wrap: wrap;\n    gap: 5rem;\n}",
                     "styleUrl": "./typing-header.css"
                 }
             ],
             "stylesData": "",
             "extends": [],
             "relationships": {
-                "incoming": [],
+                "incoming": [
+                    {
+                        "name": "TypingTest",
+                        "type": "component"
+                    }
+                ],
                 "outgoing": [
                     {
                         "name": "PersonalBestBadge",
@@ -633,7 +1299,7 @@
                     }
                 ]
             },
-            "templateData": "<section class=\"typing-header\">\n    <section class=\"typing-header__principal\">\n        <img src=\"assets/images/logo-large.svg\">\n        <app-personal-best-badge [score]=\"personalBestScore()\" />\n    </section>\n    <section class=\"typing-header__metrics\">\n\n    </section>\n</section>"
+            "templateData": "<section class=\"typing-header\">\n    <section class=\"typing-header__principal\">\n        <img src=\"assets/images/logo-large.svg\">\n        <app-personal-best-badge [score]=\"personalBestScore()\" />\n    </section>\n    <section class=\"typing-header__data\">\n\n        <div class=\"typing-header__metrics\">\n            <app-typing-metrics />\n        </div>\n\n        <div class=\"typing-header__selectors\">\n            <app-selector-difficulty (difficultySelected)=\"onDifficultyChange($event)/>\n            <app-selector-mode />\n        </div>\n    </section>\n</section>"
         },
         {
             "name": "TypingMetrics",
@@ -721,7 +1387,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".typing-metrics {\n    display: flex;\n    align-items: center;\n}\n\n.typing-metrics-title {\n    color: hsl(240, 3%, 46%);\n}\n\n.typing-metrics-value {\n    font-weight: bold;\n    color: white;\n}\n\n.typing-metrics-line {\n    color: hsl(240, 3%, 46%);\n    height: 1rem;\n}",
+                    "data": ".typing-metrics {\n    display: flex;\n    align-items: center;\n    gap: 2rem;\n    font-size: 2rem;\n}\n\n.typing-metrics>*:not(:last-child) {\n    border-right: 1px solid #444;\n    padding-right: 1.5rem;\n}\n\n.typing-metrics-title {\n    color: hsl(240, 3%, 46%);\n}\n\n.typing-metrics-value {\n    font-weight: bold;\n    color: white;\n}\n\n.typing-metrics-line {\n    color: hsl(240, 3%, 46%);\n    height: 1rem;\n}",
                     "styleUrl": "./typing-metrics.css"
                 }
             ],
@@ -741,7 +1407,7 @@
                     }
                 ]
             },
-            "templateData": "<div class=\"typing-metrics\">\n    <app-metric>\n        <span class=\"typing-metrics-title\" metrics-title>WPM: </span>\n        <span class=\"typing-metrics-value\" metric-value>{{ wpm() }}</span>\n    </app-metric>\n\n    <hr class=\"typing-metrics-line\">\n\n    <app-metric>\n        <span class=\"typing-metrics-title\" metrics-title>Accuracy: </span>\n        <span class=\"typing-metrics-value\" metric-value>{{ accuracy() }}</span>\n    </app-metric>\n\n    <hr class=\"typing-metrics-line\">\n\n    <app-metric>\n        <span class=\"typing-metrics-title\" metrics-title>Time: </span>\n        <span class=\"typing-metrics-value\" metric-value>{{ time() }}</span>\n    </app-metric>\n</div>"
+            "templateData": "<div class=\"typing-metrics\">\n    <app-metric>\n        <span class=\"typing-metrics-title\" metrics-title>WPM: </span>\n        <span class=\"typing-metrics-value\" metric-value>{{ wpm() }}</span>\n    </app-metric>\n\n    <app-metric>\n        <span class=\"typing-metrics-title\" metrics-title>Accuracy: </span>\n        <span class=\"typing-metrics-value\" metric-value>{{ accuracy() }} %</span>\n    </app-metric>\n\n    <app-metric>\n        <span class=\"typing-metrics-title\" metrics-title>Time: </span>\n        <span class=\"typing-metrics-value\" metric-value>{{ time() }}</span>\n    </app-metric>\n</div>"
         },
         {
             "name": "TypingTest",
@@ -793,6 +1459,130 @@
                 "outgoing": []
             },
             "templateData": "<p>typing-test works!</p>\n"
+        },
+        {
+            "name": "TypingTest",
+            "id": "component-TypingTest-9e5e28b017cbb9dc6495eda8e7ba1e4b902df7aafbd6934efc4551122be5c4187239694c890873ea3289eb265a46e5ae5c1ac44c94a0841cb597ec030f9034c0-1",
+            "file": "src/app/features/typing-test/pages/typing-test/typing-test.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-typing-test",
+            "styleUrls": [
+                "./typing-test.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./typing-test.html"
+            ],
+            "templateVariables": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "difficulty",
+                    "coverageIgnore": false,
+                    "defaultValue": "signal<DifficultyLevel>(1)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "unknown",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "rawdescription": "\n",
+                    "modifierKind": [
+                        124,
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onDifficultyChange",
+                    "coverageIgnore": false,
+                    "args": [
+                        {
+                            "name": "level",
+                            "type": "DifficultyLevel",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n",
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": "level",
+                            "type": "DifficultyLevel",
+                            "optional": false,
+                            "dotDotDotToken": false,
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "coverageIgnore": false,
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "TypingAction"
+                },
+                {
+                    "name": "TypingHeader"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, signal } from '@angular/core';\nimport { DifficultyLevel } from '../../components/selector-difficulty/selector-difficulty';\nimport { TypingAction } from '../../components/typing-action/typing-action';\nimport { TypingHeader } from '../../components/typing-header/typing-header';\n\n@Component({\n  selector: 'app-typing-test',\n  imports: [TypingAction, TypingHeader],\n  templateUrl: './typing-test.html',\n  styleUrl: './typing-test.css',\n})\nexport class TypingTest {\n  protected readonly difficulty = signal<DifficultyLevel>(1);\n\n  onDifficultyChange(level: DifficultyLevel): void {\n    this.difficulty.set(level);\n  }\n}",
+            "styleUrl": "./typing-test.css",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./typing-test.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "TypingTest-1",
+            "relationships": {
+                "incoming": [],
+                "outgoing": [
+                    {
+                        "name": "TypingAction",
+                        "type": "component"
+                    },
+                    {
+                        "name": "TypingHeader",
+                        "type": "component"
+                    }
+                ]
+            },
+            "templateData": "<section class=\"typing-page\">\n    <app-typing-header></app-typing-header>\n    <app-typing-action></app-typing-action>\n</section>"
         }
     ],
     "modules": [],
@@ -822,7 +1612,21 @@
             }
         ],
         "functions": [],
-        "typealiases": [],
+        "typealiases": [
+            {
+                "name": "DifficultyLevel",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "coverageIgnore": false,
+                "rawtype": "\"1\" | \"2\" | \"3\"",
+                "file": "src/app/features/typing-test/components/selector-difficulty/selector-difficulty.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "rawdescription": "",
+                "description": "",
+                "kind": 193
+            }
+        ],
         "enumerations": [],
         "groupedVariables": {
             "src/app/app.config.ts": [
@@ -854,7 +1658,23 @@
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {}
+        "groupedTypeAliases": {
+            "src/app/features/typing-test/components/selector-difficulty/selector-difficulty.ts": [
+                {
+                    "name": "DifficultyLevel",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "coverageIgnore": false,
+                    "rawtype": "\"1\" | \"2\" | \"3\"",
+                    "file": "src/app/features/typing-test/components/selector-difficulty/selector-difficulty.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "",
+                    "description": "",
+                    "kind": 193
+                }
+            ]
+        }
     },
     "routes": {
         "name": "<root>",
@@ -909,6 +1729,16 @@
                 "linktype": "component",
                 "name": "SelectorDifficulty",
                 "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/typing-test/components/selector-difficulty/selector-difficulty.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "DifficultyLevel",
+                "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
@@ -922,12 +1752,21 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/features/typing-test/components/typing-action/typing-action.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TypingAction",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/features/typing-test/components/typing-header/typing-header.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "TypingHeader",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {
@@ -937,6 +1776,33 @@
                 "name": "TypingMetrics",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/typing-test/directives/typing-listener.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "TypingListenerDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/typing-test/pages/typing-test/typing-test.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TypingTest",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/typing-test/services/typing-engine.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "TypingEngineService",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
